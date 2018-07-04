@@ -1,5 +1,7 @@
 package com.example.harshitharao.travelplannerapp;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -24,6 +26,10 @@ public class BufferActivity extends AppCompatActivity {
 
         TextView totalTime = findViewById(R.id.total_time);
         totalTime.setText(totalTimeTaken);
+
+        Intent timeIntent = new Intent(this, TravelPlannerActivity.class).putExtra("totalTime", totalTimeTaken);
+        setResult(Activity.RESULT_OK, timeIntent);
+        finish();
     }
 
 }

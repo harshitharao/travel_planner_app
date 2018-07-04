@@ -1,6 +1,7 @@
 package com.example.harshitharao.travelplannerapp;
 
 import android.content.Intent;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -26,5 +27,16 @@ public class TravelPlannerActivity extends AppCompatActivity {
 
         Intent timeIntent = new Intent(this, BufferActivity.class).putExtra("initialTime", time);
         startActivityForResult(timeIntent, TIME_ACTIVITY_CODE);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        if (requestCode == TIME_ACTIVITY_CODE) {
+            if (resultCode == RESULT_OK) {
+                String totalTime = data.getStringExtra("totalTime");
+                TextView totalTimeView = findViewById(R.id.total_time);
+                totalTimeView.setText(totalTime);
+            }
+        }
     }
 }
