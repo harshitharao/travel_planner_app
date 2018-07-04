@@ -14,14 +14,14 @@
 
     <TextView
         android:id="@+id/initial_time"
-        android:hint="Initial Time"
+        android:hint="@string/initial_time"
         android:gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
     <EditText
         android:id="@+id/buffer"
-        android:hint="Buffer"
+        android:hint="@string/buffer"
         android:gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -29,7 +29,7 @@
 
     <TextView
         android:id="@+id/total_time"
-        android:hint="Total Time needed is: "
+        android:hint="@string/total_time_with_buffer"
         android:gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -41,7 +41,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Calculate"
+        android:text="@string/calculate"
         android:onClick="calculate"/>
 
 </LinearLayout>

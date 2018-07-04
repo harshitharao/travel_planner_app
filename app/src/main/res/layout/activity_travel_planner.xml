@@ -14,7 +14,7 @@
 
     <EditText
         android:id="@+id/distance"
-        android:hint="Distance"
+        android:hint="@string/distance"
         android:gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -22,7 +22,7 @@
 
     <EditText
         android:id="@+id/velocity"
-        android:hint="Velocity"
+        android:hint="@string/velocity"
         android:gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -30,7 +30,7 @@
 
     <TextView
         android:id="@+id/time"
-        android:hint="Time needed is: "
+        android:hint="@string/time_taken"
         android:gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -42,12 +42,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Calculate"
+        android:text="@string/calculate"
         android:onClick="calculate"/>
 
     <TextView
         android:id="@+id/total_time"
-        android:hint="Total Time needed with buffer is: "
+        android:hint="@string/total_time_taken"
         android:gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
