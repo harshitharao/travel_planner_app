@@ -10,4 +10,5 @@
     <string name="initial_time">ಆರಂಭಿಕ ಸಮಯ</string>
     <string name="buffer">ಹೆಚ್ಚುವರಿ ಸಮಯ</string>
     <string name="total_time_taken">ಒಟ್ಟು ಅಗತ್ಯವಿರುವ ಸಮಯ:</string>
+    <string name="capture">ಸೆರೆಹಿಡಿಯಿರಿ</string>
 </resources>

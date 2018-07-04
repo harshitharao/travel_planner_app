@@ -9,4 +9,5 @@
     <string name="initial_time">Initial Time</string>
     <string name="buffer">Buffer</string>
     <string name="total_time_taken">Total Time needed is:</string>
+    <string name="capture">Capture</string>
 </resources>
