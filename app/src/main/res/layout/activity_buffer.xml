@@ -12,25 +12,24 @@
     android:gravity="center_horizontal"
     tools:context=".TravelPlannerActivity">
 
-    <EditText
-        android:id="@+id/distance"
-        android:hint="Distance"
+    <TextView
+        android:id="@+id/initial_time"
+        android:hint="Initial Time"
         android:gravity="center_horizontal"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="number"/>
+        android:layout_height="wrap_content"/>
 
     <EditText
-        android:id="@+id/velocity"
-        android:hint="Velocity"
+        android:id="@+id/buffer"
+        android:hint="Buffer"
         android:gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="number"/>
 
     <TextView
-        android:id="@+id/time"
-        android:hint="Time needed is: "
+        android:id="@+id/total_time"
+        android:hint="Total Time needed is: "
         android:gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
