@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TravelPlannerApp</string>
+    <string name="title_activity_buffer">BufferActivity</string>
+    <string name="distance">ದೂರ</string>
+    <string name="velocity">ವೆಲಾಸಿಟಿ</string>
+    <string name="time_taken">ಬೇಕಾದ ಸಮಯ:</string>
+    <string name="calculate">ಲೆಕ್ಕ</string>
+    <string name="total_time_with_buffer">
+ಒಟ್ಟು ಅಗತ್ಯವಿರುವ ಸಮಯ:</string>
+    <string name="initial_time">ಆರಂಭಿಕ ಸಮಯ</string>
+    <string name="buffer">ಹೆಚ್ಚುವರಿ ಸಮಯ</string>
+    <string name="total_time_taken">ಒಟ್ಟು ಅಗತ್ಯವಿರುವ ಸಮಯ:</string>
+</resources>
