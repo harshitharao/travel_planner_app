@@ -54,4 +54,8 @@ public class TravelPlannerActivity extends AppCompatActivity {
         Intent cameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         startActivityForResult(cameraIntent, CAMERA_ACTIVITY_CODE);
     }
+
+    public void navigateToList(View view) {
+        startActivity(new Intent(this, ListActivity.class));
+    }
 }
