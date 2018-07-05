@@ -2,7 +2,8 @@ package com.example.harshitharao.travelplannerapp;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.TextView;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 
 import java.util.List;
 
@@ -15,10 +16,11 @@ public class ListActivity extends AppCompatActivity {
         PostsRepository postsRepository = new PostsRepository();
         List<Post> posts = postsRepository.getPostsSync();
 
-        TextView titleView = findViewById(R.id.title);
-        titleView.setText(posts.get(0).getTitle());
-        TextView bodyView = findViewById(R.id.body);
-        bodyView.setText(posts.get(0).getBody());
+        RecyclerView recyclerView = findViewById(R.id.recycler_view);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getBaseContext()));
+
+        ListAdaptor listAdaptor =  new ListAdaptor(posts);
+        recyclerView.setAdapter(listAdaptor);
     }
 
 }
